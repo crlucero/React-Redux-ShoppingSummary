@@ -41,11 +41,11 @@ class Promo extends Component {
 
         <Collapse in={this.state.open}>
           <div>
-            <Card>
+            <Card className='promo-form'>
               <Row className="show-grid">
                 <br />
                 <Col md={12}>
-                  <Form>
+                  <Form >
                     <FormGroup controlId="formInlineName">
                       <FormLabel>Promo Code</FormLabel>
                       <FormControl
@@ -57,7 +57,7 @@ class Promo extends Component {
                     </FormGroup>
                     <Button
                       block
-                      className="btn-round"
+                      className="btn-promo"
                       disabled={this.props.isDisabled}
                       onClick={this.props.giveDiscount}
                     >
